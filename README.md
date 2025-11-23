@@ -176,3 +176,4 @@ footer {
   padding: 20px;
   background: #eee;
 }
+<link rel="stylesheet" href="style.css">
