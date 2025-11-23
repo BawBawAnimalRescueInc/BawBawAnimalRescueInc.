@@ -18,7 +18,7 @@
     </nav>
   </header>
   <main>
-    <h2>Saving lives, one paw at a time</h2>
+    <h2>From Goldfish To Roo, It All Starts With You</h2>
     <p>We are a volunteer‑run non‑profit rescuing and rehoming animals in the Baw Baw region.</p>
     <img src="images/dog.jpg" alt="Rescue dog">
   </main>
