@@ -16,7 +16,14 @@
       <a href="donate.html">Donate</a>
       <a href="contact.html">Contact</a>
     </nav>
-  </header>
+  </header>[style.css](https://github.com/user-attachments/files/23694515/style.css)
+body { font-family: Arial, sans-serif; margin: 0; background: #f9fafb; color: #111; }
+header { background: #2563eb; color: white; padding: 20px; text-align: center; }
+nav a { color: white; margin: 0 10px; text-decoration: none; }
+main { max-width: 800px; margin: 20px auto; padding: 0 16px; }
+img { max-width: 100%; border-radius: 8px; }
+footer { text-align: center; color: #666; padding: 20px; }
+
   <main>
     <h2>From Goldfish To Roo, It All Starts With You</h2>
     <p>We are a volunteer‑run non‑profit rescuing and rehoming animals in the Baw Baw region.</p>
@@ -25,3 +32,4 @@
   <footer>&copy; 2025 Baw Baw Animal Rescue Inc.</footer>
 </body>
 </html>
+
