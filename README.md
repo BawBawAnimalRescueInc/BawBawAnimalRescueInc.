@@ -1,19 +1,20 @@
-[index.html.html](https://github.com/user-attachments/files/23699322/index.html.html)
+[index.html.html](https://github.com/user-attachments/files/23699411/index.html.html)
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="utf-8">
   <title>Baw Baw Animal Rescue Inc.</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Merriweather font -->
   <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700;900&display=swap" rel="stylesheet">
   <style>
     :root {
-      --bg: #f4e7d4;
-      --text: #2b5f4a;
-      --accent: #e07a5f;
+      --bg: #f6c28b;       /* warm orange background */
+      --text: #2b5f4a;     /* dark green text */
       --white: #ffffff;
-      --radius: 16px;
-      --shadow: 0 6px 18px rgba(0,0,0,.1);
+      --accent: #e76f51;   /* fun accent for buttons */
+      --radius: 14px;
+      --shadow: 0 6px 18px rgba(0,0,0,.12);
       --max: 1100px;
     }
     * { box-sizing: border-box; margin: 0; padding: 0 }
@@ -28,9 +29,7 @@
     header {
       background: var(--white);
       border-bottom: 1px solid rgba(0,0,0,.1);
-      position: sticky;
-      top: 0;
-      z-index: 10;
+      position: sticky; top: 0; z-index: 10;
     }
     .nav {
       max-width: var(--max);
@@ -46,38 +45,23 @@
       margin: 0 10px;
       font-weight: bold;
     }
-    .hero {
-      text-align: center;
-      padding: 80px 20px;
-    }
-    .hero h1 {
-      font-size: 2.5em;
-      margin-bottom: 20px;
-      color: var(--text);
-    }
-    section {
-      max-width: var(--max);
-      margin: auto;
-      padding: 60px 20px;
-    }
-    h2 {
-      margin-bottom: 20px;
-      color: var(--text);
-    }
-    .grid {
-      display: grid;
-      gap: 20px;
-    }
+
+    section { max-width: var(--max); margin: auto; padding: 60px 20px }
+    h1,h2,h3 { color: var(--text); margin-bottom: 20px }
+    .hero { text-align: center; padding: 80px 20px }
+    .hero h1 { font-size: 2.5em; margin-bottom: 20px }
+
+    .grid { display: grid; gap: 20px }
     @media(min-width: 700px) {
-      .grid.cols-2 { grid-template-columns: 1fr 1fr; }
-      .grid.cols-3 { grid-template-columns: repeat(3, 1fr); }
+      .grid.cols-2 { grid-template-columns: 1fr 1fr }
+      .grid.cols-3 { grid-template-columns: repeat(3, 1fr) }
     }
+
     .card {
       background: var(--white);
-      border: 1px solid #ddd;
       border-radius: var(--radius);
-      padding: 20px;
       box-shadow: var(--shadow);
+      padding: 20px;
     }
     .btn {
       display: inline-block;
@@ -104,9 +88,9 @@
     <div><strong>Baw Baw Animal Rescue Inc.</strong></div>
     <nav>
       <a href="#home">Home</a>
-      <a href="#adopt">Adopt</a>
       <a href="#donate">Donate</a>
       <a href="#membership">Membership</a>
+      <a href="#adopt">Adopt</a>
       <a href="#contact">Contact</a>
     </nav>
   </div>
@@ -118,44 +102,23 @@
   <p>We’re a volunteer‑run nonprofit caring for animals across the Baw Baw region. Compassion guides everything we do.</p>
 </section>
 
-<section id="adopt">
-  <h2>Adopt</h2>
-  <div class="grid cols-3">
-    <div class="card">
-      <img src="UMcsUcg72hYVcpZonV32m.jpeg" alt="Kangaroos">
-      <h3>Koda</h3>
-      <p>Playful kangaroo who loves bush walks.</p>
-      <a class="btn" href="#contact">Enquire</a>
-    </div>
-    <div class="card">
-      <img src="3f8wjdG3wsZQ29612HdAA.jpeg" alt="Koalas">
-      <h3>Rosie & Joey</h3>
-      <p>Gentle duo seeking a safe habitat and attentive care.</p>
-      <a class="btn" href="#contact">Enquire</a>
-    </div>
-    <div class="card">
-      <img src="i6dun9qHeT6eSDCt8fAgZ.jpeg" alt="Sugar glider">
-      <h3>Whiskers</h3>
-      <p>Curious and social — perfect for experienced carers.</p>
-      <a class="btn" href="#contact">Enquire</a>
-    </div>
-  </div>
-</section>
-
 <section id="donate">
   <h2>Donate</h2>
   <div class="grid cols-3">
     <div class="card">
+      <img src="UMcsUcg72hYVcpZonV32m.jpeg" alt="Kangaroo">
       <h3>$25</h3>
       <p>Provides vaccinations and basic supplies for one animal.</p>
       <a class="btn" href="#contact">Donate</a>
     </div>
     <div class="card">
+      <img src="3f8wjdG3wsZQ29612HdAA.jpeg" alt="Koalas">
       <h3>$50</h3>
       <p>Covers food and enrichment for a week.</p>
       <a class="btn" href="#contact">Donate</a>
     </div>
     <div class="card">
+      <img src="i6dun9qHeT6eSDCt8fAgZ.jpeg" alt="Sugar glider">
       <h3>$100</h3>
       <p>Funds vet checks and emergency transport.</p>
       <a class="btn" href="#contact">Donate</a>
@@ -167,19 +130,46 @@
   <h2>Membership</h2>
   <div class="grid cols-3">
     <div class="card">
+      <img src="17pE61thU9GysXennv6Cu.jpeg" alt="Galah">
       <h3>Individual — $25</h3>
       <p>Supports one rescued animal.</p>
       <a class="btn" href="#contact">Join</a>
     </div>
     <div class="card">
+      <img src="2SAhXFqv5Tk7bd3TfSRo2.jpeg" alt="Echidna">
       <h3>Family — $45</h3>
       <p>Supports multiple animals and includes family updates.</p>
       <a class="btn" href="#contact">Join</a>
     </div>
     <div class="card">
+      <img src="Vkb53e77RixsHYGBCLkTh.jpeg" alt="Kookaburra">
       <h3>Sponsor — $80</h3>
       <p>Includes name recognition and sponsor updates.</p>
       <a class="btn" href="#contact">Join</a>
+    </div>
+  </div>
+</section>
+
+<section id="adopt">
+  <h2>Adopt</h2>
+  <div class="grid cols-3">
+    <div class="card">
+      <img src="SBTgmrBdAtLS1AVGFFBw3.jpeg" alt="Kangaroos at sunset">
+      <h3>Koda</h3>
+      <p>Playful kangaroo who loves bush walks.</p>
+      <a class="btn" href="#contact">Enquire</a>
+    </div>
+    <div class="card">
+      <img src="E33pPsfmnRxnaABPi2YVK.jpeg" alt="Koala climbing">
+      <h3>Rosie & Joey</h3>
+      <p>Gentle duo seeking a safe habitat and attentive care.</p>
+      <a class="btn" href="#contact">Enquire</a>
+    </div>
+    <div class="card">
+      <img src="8jvVDbK7Hf32LUfCZbCba.jpeg" alt="Kangaroo crossing road">
+      <h3>Whiskers</h3>
+      <p>Curious sugar glider — perfect for experienced carers.</p>
+      <a class="btn" href="#contact">Enquire</a>
     </div>
   </div>
 </section>
